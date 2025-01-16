@@ -1,0 +1,76 @@
+html, body {
+    height: 100%;
+    margin-top: 0;
+}
+
+body {
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #222;
+    color: #eee;
+}
+
+/* The main area grows to fill space and centers its content */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertical center */
+    align-items: left;     /* horizontal center */
+    flex: 1;                 /* take up remaining space */
+    max-width: min(85%, 400px);
+    margin: 0 auto;
+    text-align: left;
+}
+
+p {
+    line-height: 1.5em;  /* Adjust as needed for tighter line spacing */
+    margin-bottom: 0.5em;  /* Default spacing after a paragraph */
+}
+
+a {
+    text-decoration: none;
+}
+  
+footer {
+    font-size: small;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.links {
+    line-height: 2;
+    text-align: center;
+    margin: 2rem 2rem; /* Space between links */
+    transition: color 0.3s ease;
+}
+
+.links a {
+    padding: 0 0.5rem;
+}
+
+a {
+    color: #72b31d; /* Light blue for dark mode */
+}
+a:hover {
+    color: #8bda22; /* Brighter blue on hover in dark mode */
+}
+
+.profile-pic {
+    width: 140px;         /* Adjust size as needed */
+    height: 140px;        /* Make height and width the same for a circle */
+    border-radius: 50%;   /* This makes it circular */
+    object-fit: cover;    /* Ensures image fills the circle nicely without distortion */
+    margin-top: 1em;      /* Add some spacing above the image */
+    margin-bottom: 0.7em;   /* Add some spacing below the image */
+}
+
+.credentials {
+    font-size: 0.8em; /* Makes the text smaller, 80% of the original size */
+    vertical-align: middle; /* Aligns the smaller text slightly higher */
+    color: gray; /* Optional: Changes the color to distinguish it */
+    margin-left: 0.5em;
+}
